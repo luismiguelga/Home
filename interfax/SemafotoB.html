@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./estilosemaforob.css">
+  <title>Semaforo con boton</title>
+</head>
+<body>
+  <div id="container">
+    <div id="caja">
+    <div class="color" id="crojo"></div>
+    <div class="color" id="cnaranja"></div>
+    <div class="color" id="cverde"></div>
+  </div>
+  <button id="boton"> Cambio</button>
+  </div>
+</body>
+  <script>
+    const verde = document.getElementById("cverde")
+    const amarillo = document.getElementById("cenaranja")
+    const rojo = document.getElementById("crojo")
+
+    let S = 2
+    let colores = ["red", "orange", "green"]
+    let div = document.querySelectorAll(".color")
+    
+    const boton = document.getElementById("boton")
+
+    boton.addEventListener("click", function(){
+
+        let dc = div[S]
+        dc.style.backgroundColor = ''
+
+        S = (S + 1) % div.length
+
+        let sd = div[S]
+        sd.style.backgroundColor = colores[S]
+
+    })
+
+  </script>
+</html>

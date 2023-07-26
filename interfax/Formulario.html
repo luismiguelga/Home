@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario </title>
+</head>
+
+<body>
+  <h3>Formulario </h3>
+  <h1>Ingrese Sus Nombre</h1>
+  <h2 id="finc1"></h2>
+  <input type="text" id="caja1">
+  <h1>Ingrese Sus Apellidos</h1>
+  <h2 id="finc2"></h2>
+  <input type="text" id="caja2">
+  <h1>Ingrese Su Edad</h1>
+  <h2 id="finc3"></h2>
+  <input type="text" id="caja3">
+  <h1>Ingrese Su Telefono</h1>
+  <h2 id="finc4"></h2>
+  <input type="number" id="caja4">
+  <h1>Ingrese Su Correo</h1>
+  <h2 id="finc5"></h2>
+  <input type="email" id="caja5">
+  <h1>Ingrese Su Contraseña</h1>
+  <h2 id="finc6"></h2>
+  <input type="text" id="caja6">
+  <br><br>
+  <button id="boton">Confirmar</button>
+
+
+    <script>
+      let validacion=false
+      let registro=[]
+      document.getElementById("boton").addEventListener("click", function validar(){
+      if (document.getElementById("caja1").value.trim() ===""){
+        finc1.innerHTML = "Necesitas digitar un nombre"
+            setTimeout(function(){
+        finc1.innerHTML = ""
+        }, 3000);
+      }else if(document.getElementById("caja2").value.trim() ===""){
+        finc2.innerHTML = "Por favor digite un Apellido"
+        setTimeout(function(){
+        finc2.innerHTML = ""
+        }, 3000);
+      }else if(document.getElementById("caja3").value.trim() ===""){
+        finc3.innerHTML = "Por favor digite un Numero"
+        setTimeout(function(){
+        finc3.innerHTML = ""
+        }, 3000);
+      }else if(document.getElementById("caja3").value<18){
+        finc3.innerHTML = "No puedes crear una cuenta tienes que tener una edad mayor a 18"
+        setTimeout(function(){
+        finc3.innerHTML = ""
+        }, 3000);
+      }else if(document.getElementById("caja4").value.trim()===""){
+        finc4.innerHTML = "Por favor digite un Telefono"
+        setTimeout(function(){
+        finc4.innerHTML = ""
+        }, 3000);
+      }else if(document.getElementById("caja4").value.length<10){
+        finc4.innerHTML = "El numero de telefono no cuenta con la cantidad de caracteres suficientes"
+        setTimeout(function(){
+        finc4.innerHTML = ""
+        }, 3000);
+      }else if(document.getElementById("caja5").value.trim() ===""){
+        finc5.innerHTML = "Por favor digite un Correo"
+        setTimeout(function(){
+        finc5.innerHTML = ""
+        }, 3000);
+      }else if(document.getElementById("caja6").value.trim() ===""){
+        finc6.innerHTML = "Por favor digite un Clave"
+        setTimeout(function(){
+        finc6.innerHTML = ""
+        }, 3000);
+      }else{
+        validacion = true
+      }
+})
+
+    function guardar(){
+      validar()
+      let datos = {
+      caja1: document.getElementById("caja1").value,
+      caja2: document.getElementById("caja2").value,
+      caja3: document.getElementById("caja3").value,
+      caja4:document.getElementById("caja4").value,
+      caja5: document.getElementById("caja5").value,
+      caja6:document.getElementById("caja6").value,
+      }
+
+      if (validacion===true){
+        registro.push(datos)
+        console.log(registro);
+      limpiar()
+}
+}
+
+      function limpiar(){
+      document.getElementById("caja1").value =""
+      document.getElementById("caja2").value=""
+      document.getElementById("caja3").value=""
+      document.getElementById("caja4").value=""
+      document.getElementById("caja5").value=""
+      document.getElementById("caja6").value=""
+}
+
+
+  </script>
+
+  <style>
+    h1 {
+      font-size: 7mm;
+    }
+    h2{
+      color: red;
+    }
+
+    body {
+      margin: 0%;
+      text-align: center;
+      margin-top: 7%;
+      background-color: rgba(147, 254, 254, 0.701);
+    }
+  </style>
+</body>
+
+</html>

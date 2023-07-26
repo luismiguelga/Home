@@ -1,0 +1,211 @@
+* {
+    margin: 0%;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    margin: 0% 20%;
+    background-color: rgb(116, 116, 116);
+  
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 8% 72%;
+    width: 100%;
+    background-color:  white;
+  }
+  
+  #FF {
+    position: relative;
+    display: flex;
+    font-size: 6mm;
+    color: rgb(47, 177, 177);
+    left: 280%;
+    top: 18%;
+  }
+  
+  #factura {
+    position: relative;
+    height: 45%;
+    width: 162%;
+    top: 30%;
+    left: -31%;
+  }
+  
+  #IF {
+    position: relative;
+    display: flex;
+    left: 380%;
+    top: 7px;
+    font-weight:540;
+  }
+  #IF1{
+      position: relative;
+      display: flex;
+      left: 400px;
+      font-size:  5mm;
+      font-weight: bold;
+  }
+  #IF3{
+    position: relative;
+    display: flex;
+    left: 550px;
+    top: -20px;
+    font-size:  5mm;
+  
+  }
+  
+  #IFMP {
+    position: relative;
+    display: flex;
+    left: 90px;
+    top: -22px;
+    font-size: 5mm;
+  
+  }
+  #IA{
+    margin-bottom: -98px;
+  }
+  
+  .Info2 {
+    position: relative;
+    box-sizing: border-box;
+    border: solid 3px rbg(0, 0, 0);
+    background-color: rgb(47, 177, 177);
+    height: 11%;
+    width: 19%;
+    left: 15%;
+  }
+  
+  .Info2 h1 {
+    position: relative;
+    display: flex;
+    font-size: 18mm;
+    color: rgb(47, 177, 177);
+    left: 260%;
+    top: 11%;
+  }
+  
+  .Info2 h2 {
+    position: relative;
+    font-size: 8mm;
+    color: rgb(47, 177, 177);
+    top: 60px;
+    right: 17%;
+    bottom: 20px;
+    width: 500px;
+  
+  }
+  
+  .Info1 {
+    box-sizing: border-box;
+    border: solid 3px rbg(0, 0, 0);
+    background-color: rgba(47, 177, 177);
+    height: 189vh;
+  }
+  
+  .Info3 h6 {
+    position: relative;
+    font-size: 15mm;
+    color: rgb(47, 177, 177);
+    left: 100%;
+    top:  100px;
+  }
+  
+  .Info3{
+    width: 350px;
+  
+  }
+  
+  #IFH{
+    position: relative;
+    display: flex;
+    margin-bottom: 9px;
+    font-weight: bold;
+    font-size: 5mm;
+    top: 70px;
+    width: 400px;
+    left: -20px;
+  }
+  #I3{
+    position: relative;
+    display: flex;
+    top: 200px;
+    left: -20px;
+    margin-bottom: 15px;
+    width: 700px;
+    font-size: 5mm;
+  }
+  
+  .mp {
+    position: relative;
+    left: 250%;
+    top: -25%;
+    font-size:  7mm;
+  }
+  
+  .mp h5{
+    position: relative;
+    margin-top: 1%;
+    font-size: 6mm;
+  }
+  
+  #mpt {
+    position: relative;
+    color: rgb(47, 177, 177);
+    width: 700px;
+    left: 15%;
+  }
+  
+  table {
+    position: relative;
+    bottom: 80px;
+    margin-top: 45%;
+    left: -23px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-collapse: collapse;
+    width: 540%;
+  
+  }
+  
+  thead {
+    background-color: rgb(47, 177, 177);
+  }
+  
+  th,
+  td {
+    padding: 5px;
+    height: 40px;
+  }
+  
+  th {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  td {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #ddd;
+  }
+  
+  @media only screen and (max-width:1300px){
+  .Info3 h6{
+    position: relative;
+    top: 245px;
+    left: 90px;
+  
+  }
+  
+  #IA{
+    position: relative;
+    left: -250px;
+  }
+  }

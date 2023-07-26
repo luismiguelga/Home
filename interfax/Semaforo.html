@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./semaforo.css">
+  <title>Semaforo</title>
+</head>
+<body>
+  <div id="container">
+    <div id="caja">
+    <div id="crojo"></div>
+    <div id="cnaranja"></div>
+    <div id="cverde"></div>
+  </div>
+  </div>
+</body>
+  <script>
+    function reiniciar(){
+    setTimeout(function(){
+    document.getElementById("crojo").style.backgroundColor= "red"
+    document.getElementById("cnaranja").style.backgroundColor= "black"
+    document.getElementById("cverde").style.backgroundColor= "black"
+      }, 2000);
+    setTimeout(function(){
+    document.getElementById("crojo").style.backgroundColor= "black"
+    document.getElementById("cnaranja").style.backgroundColor= "orange"
+    document.getElementById("cverde").style.backgroundColor= "black"
+      }, 3000);
+    setTimeout(function(){
+    document.getElementById("crojo").style.backgroundColor= "black"
+    document.getElementById("cnaranja").style.backgroundColor= "black"
+    document.getElementById("cverde").style.backgroundColor= "green"
+      }, 4000);
+    }
+
+setInterval(reiniciar, 4000);
+  </script>
+</html>

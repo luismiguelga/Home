@@ -1,0 +1,49 @@
+body{
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    background-color: rgba(114, 208, 203, 0.878);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  
+  }
+  *{
+    font-size: 9mm;
+  }
+  #botones{
+    gap: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    height: 300px;
+    padding: 5px;
+    width: 550px;
+  position: relative;
+  left:25px;
+  top: 35px;
+  }
+  
+  #bigual{
+    display: grid;
+    grid-column: 4/6;
+    ;
+  }
+  
+  h1{
+  font-size: 12mm;
+  }
+  
+  #caja{
+    width: 540px;
+    height: 25px;
+  }
+  
+  
+  #container{
+    background-color: rgb(190, 134, 211);
+    border-radius: 20px;
+    height: 600px;
+    width: 600px;
+   
+  }

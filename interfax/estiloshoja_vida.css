@@ -1,0 +1,142 @@
+* {
+    margin: 0%;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    width: 100%;
+    height: 1500px;
+  }
+  
+  .Info1 {
+    box-sizing: border-box;
+    border: solid 3px rbg(0, 0, 0);
+    background-color: rgb(218, 71, 71);
+  }
+  
+  .Info1 h1 {
+    font-size: 2em;
+    color: white;
+    margin-left: 16%;
+  }
+  
+  .Info1 ul {
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    margin-left: 12%;
+  }
+  .Info1 li{
+    margin-bottom: 2%;
+  }
+  
+  .Info1 img {
+    margin: 15%;
+    height: 15%;
+    width: 70%;
+    border-radius: 50%;
+  }
+  
+  .Info1 button{
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 5%;
+    margin-left: 20%;
+    margin-top: 20%;
+  }
+  .Info2 h2{
+    margin-top: 4%;
+    margin-left: 6%;
+    margin-bottom: 3%;
+    font-size: 3em;
+    color: rgb(85, 85, 85);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .Info2 P{
+  
+    font-size: 1.2em;
+  }
+  
+  .Info2 h3{
+    margin-left: 7%;
+    margin-top: 2%;
+    color: orange;
+    font-size: 2em;
+  }
+  .Info2 h4{
+    color: orange;
+    font-size: 1.6em;
+  }
+  
+  .Info2 ul{
+    font-size: 1.3em;
+    margin-top: 1%;
+    margin-left: 6%;
+  }
+  
+  .Info2 img{
+    margin: 6px;
+    height: 35px;
+    width: 35px;
+    border-radius: 10%;
+  }
+  
+  #Data{
+    margin-bottom: 4px;
+  
+  }
+  #Fecha{
+    margin-left: 7%;
+  }
+  
+  #Presta{
+    height: 60px;
+    width: 110px;
+    border-radius: 30%;
+  }
+  #mysql{
+    height: 60px;
+    width: 110px;
+  }
+  #ios{
+    height: 40px;
+    width: 40px;
+    margin-top: 15px;
+  }
+  #texto{
+    margin-top: 1%;
+    margin-left: 7%;
+  }
+  #TD{
+    margin-top: 1%;
+    margin-left: 9%;
+    font-size: 1.3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  #TL{
+    margin-top: 1%;
+    margin-left: 9%;
+    font-size: 1.3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  @media screen and (max-width: 1114px){
+    .container{
+      grid-template-columns: 100%;
+    }
+    .Info1{
+      margin: 0%;
+    }
+    .Info1 img{
+      height: 40%;
+    }
+  }

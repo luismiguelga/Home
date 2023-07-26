@@ -1,0 +1,65 @@
+*{
+    margin: 0%;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    color: rgb(255, 0, 0);
+    position: relative;
+    display: flex;
+    left: 120px;
+    margin-top: 12%;
+    font-size: 3em;
+}
+h2{
+    color: rgb(255, 255, 255);
+    position: relative;
+    display: flex;
+    left: 120px;
+    margin-top: 6%;
+    font-size: 2em;
+}
+
+#Opcionf{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    position: relative;
+    display: flex;
+    left: 600px;
+    top: -225px;
+    height: 170px;
+    width: 140%;
+
+}
+#trabajo0 img{
+        background-size: 100% 100%;
+        height: 0%;
+        width:  0px;
+}
+img{
+    background-size: 100% 100%;
+    height: 170px;
+    width:  250px;
+}
+
+#trabajo1, #trabajo2, #trabajo3, #trabajo4, #trabajo5{
+    border: 5px solid rgb(255, 0, 0);
+    margin: 10px;
+    height: 170px;
+    width: 100%;
+
+}
+
+#trabajo5, #trabajo6, #trabajo7, #trabajo8, #trabajo9{
+    border: 5px solid rgb(255, 0, 0);
+    margin: 10px;
+    height: 170px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    right: 1196px;
+    top: 220px;
+}

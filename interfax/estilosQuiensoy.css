@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    font-size: 3em;
+    color: orangered;
+    padding: 15px 0;
+  }
+  
+  h2 {
+    font-size: 2em;
+    color: rgb(71, 79, 87);
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 5em;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+  }
+  button {
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    color: white;
+    background-color: orangered;
+    border: none;
+  }
+  
+  #Mp {
+    display: grid;
+    grid-column: 1/5;
+    font-size: 3em;
+  }
+  
+  .Div2 {
+    padding-top: 70px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  
+  .Div2 p {
+    text-align: left;
+  }
+  
+  .Foto {
+    text-align: right;
+    margin: 0;
+  }
+  
+  .Parrafo p {
+    text-align: left;
+    padding: 20px 20px 20px  0;
+    font-size: 1.7em;
+  }
+  
+  .Foto2 {
+    text-align: center;
+  }
+  
+  .Foto2 img {
+    border-radius: 50%;
+  }
+  
+  .Div22 {
+    background-color: rgb(255, 123, 0);
+    margin: 0%;
+  }
+  
+  .Centro h4 {
+    color: white;
+    text-align: center;
+    margin-right: 20%;
+    margin-left: 20%;
+    font-size: 1.7em;
+  }
+  
+  .Centro p {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-right: 20%;
+    margin-left: 20%;
+    font-size: 1.7em;
+    font-style: italic;
+  }
+  
+  
+  #cuadros {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  
+  }
+  
+  #cuadros .contenedor-cartas {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 15px;
+    display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+      gap: 16px;
+  }
+  
+  #cuadros .contenedor-cartas .carta {
+    border: #000 solid;
+    border-radius: 15px;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #cuadros .contenedor-cartas .carta .imagen {
+    height: 400px;
+    width: 100%;
+  }
+  
+  #cuadros .contenedor-cartas .carta .imagen img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  
+  }
+  
+  #cuadros .contenedor-cartas .carta .contenido .btn {
+    align-items: center;
+    border: none;
+  }
+  
+  #cuadros .contenedor-cartas .carta .contenido h3 {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+  }
+  
+  #cuadros .contenedor-cartas .carta .contenido p {
+    text-align: center;
+    padding: 10px 5px;
+    font-size: 1.4em;
+  }
+  
+  
+  header {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(71, 79, 87);
+    margin: 0;
+    padding: 1%;
+    color: white;
+    z-index: 1;
+  
+  }
+  
+  header .container{
+  display: flex;
+  justify-content: space-between;
+  }
+  
+  .nav-menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 0 10px;
+  }
+  
+  @media only screen and (max-width: 991px) {
+    .Div2{
+      grid-template-columns: 100%;
+    }
+    .Div2 .Foto{
+      text-align: center;
+    }
+    .Div2 .Parrafo{
+      text-align: center;
+    }
+  }
+  

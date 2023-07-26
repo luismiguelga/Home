@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de trabajos</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    <div id="container">
+    <div id="letras">
+        <h1>Historial trabajos</h1>
+        <h2>Luis Miguel Galvis </h2>
+    </div>
+    <div id="igm"></div>
+    <div id="Opcionf"></div>
+</body>
+<script>
+
+    const proyectos = [
+        {
+            href: "Quien soy.html",
+            imgSrc: "./Fotos/Q.jpg",
+        },
+        {
+            href: "Quien soy.html",
+            imgSrc: "./Fotos/Quien soy.jpg",
+        },
+        {
+            href: "Hoja_vida.html",
+            imgSrc: "./Fotos/Perfil.jpg",
+        },
+        {
+            href: "Formulario.html",
+            imgSrc: "./Fotos/Formulario.jpg",
+        },
+        {
+            href: "Galeria.html",
+            imgSrc: "./Fotos/Galeria.jpg",
+        },
+        {
+            href: "SemaforoB.html",
+            imgSrc: "./Fotos/Semaforo.jpg",
+        },
+        {
+            href: "Semaforo.html",
+            imgSrc: "./Fotos/Semaforo.jpg",
+        },
+        {
+            href: "Factura.html",
+            imgSrc: "./Fotos/Factura.jpg",
+        },
+        {
+            href: "Calendario.html",
+            imgSrc: "./Fotos/Calendario.jpg",
+        },
+        {
+            href: "Calculadora.html",
+            imgSrc: "./Fotos/Calculadora.jpg",
+        },
+    ];
+
+    const Opcionf = document.getElementById("Opcionf");
+
+    for (let i = 1; i < proyectos.length; i++) {
+        const proyecto = proyectos[i];
+
+        const div = document.createElement("div");
+        div.id = "trabajo" + i;
+        Opcionf.appendChild(div);
+
+        const imagen = document.createElement("img");
+        imagen.src = proyecto.imgSrc;
+        imagen.alt = "imagen" + i;
+
+        imagen.addEventListener("click", function () {
+            window.location.href = proyecto.href;
+        });
+
+        div.appendChild(imagen);
+    }
+</script>
+</html>
